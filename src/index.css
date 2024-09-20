@@ -1,0 +1,27 @@
+.outline-label {
+  flex-grow: 1;
+}
+
+.outline-label input {
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.outline-label label {
+  top: 0.5rem;
+  margin-left: 0.75rem;
+  position: absolute;
+  font-size: 1.1rem;
+  background-color: inherit;
+  outline: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.outline-label input:focus ~ label,
+.outline-label input:not(:placeholder-shown) ~ label {
+  top: -0.9rem;
+  pointer-events: none;
+  transition: 0.3s ease all;
+  font-weight: bolder;
+}

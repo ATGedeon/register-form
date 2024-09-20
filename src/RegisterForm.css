@@ -1,0 +1,136 @@
+.step-one-container,
+.step-two-container {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.step-one-container {
+  background-image: url('assets/rihanna-bg-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.step-two-container {
+  background-image: url('assets/rihanna-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form-container {
+  width: 100%;
+  background-color: rgba(15, 2, 63, 0.6);
+}
+
+.form-content {
+  width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  .step-one-container {
+    background-image: url('assets/rihanna-bg-2.jpg');
+  }
+  .step-two-container {
+    background-image: url('assets/rihanna-bg-3.jpg');
+  }
+
+  .form-container {
+    background-color: rgba(15, 2, 63, 0.2);
+  }
+
+  .form-content {
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .step-one-container .form-header,
+  .step-two-container .form-header {
+    background-color: rgba(250, 37, 108, 0.4);
+    /* background-color: hsla(219, 79%, 66%, 0.502); */
+  }
+
+  .form-container-one,
+  .form-container-two {
+    background-color: rgba(15, 2, 63, 0.5);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top: 2px solid rgb(250, 37, 108);
+  }
+}
+
+.step-one-container .form-header,
+.step-two-container .form-header {
+  height: 10vh;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  color: azure;
+  font-weight: bolder;
+  /* backdrop-filter: sepia(80%);
+  -webkit-backdrop-filter: sepia(80%); */
+}
+
+.step-one-container .form-footer,
+.step-two-container .form-footer {
+  height: 10vh;
+}
+
+.step-one-container input,
+.step-two-container input {
+  background-color: transparent;
+  color: azure;
+}
+
+input[type='date'] {
+  color: azure;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+.step-one-container input:focus {
+  background-color: inherit;
+  color: azure;
+}
+.step-two-container input:focus {
+  background-color: inherit;
+  color: aliceblue;
+}
+
+.step-one-container label {
+  color: azure;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+.birth-date-label,
+.gender-label {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.step-two-container label {
+  color: azure;
+}
+
+.step-one-container select {
+  background-color: inherit;
+  color: aliceblue;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+.input-group-text {
+  background-color: inherit !important;
+}
+
+.step-one-container .input-group-text .bi {
+  color: yellow !important;
+}
+
+.step-two-container .input-group-text .bi {
+  color: rgb(250, 37, 108) !important;
+}
+
+.step-one-container option {
+  color: black;
+}
+
+.btn.btn-outline-primary,
+.btn.btn-outline-secondary {
+  color: azure;
+  font-weight: bolder;
+}
